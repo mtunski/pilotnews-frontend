@@ -2,7 +2,7 @@
   "name": "PilotNews",
   "version": "0.0.0",
   "description": "PA Workshop task",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
     "start": "http-server dist --silent",
     "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .jsx"
