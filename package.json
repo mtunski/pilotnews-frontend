@@ -4,11 +4,14 @@
   "description": "PA Workshop task",
   "main": "index.js",
   "scripts": {
-    "start": "http-server dist --silent"
+    "start": "http-server dist --silent",
+    "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .jsx"
   },
   "author": "Mateusz Tuński",
   "license": "ISC",
   "devDependencies": {
-    "http-server": "^0.7.5"
+    "browserify": "^9.0.3",
+    "http-server": "^0.7.5",
+    "watchify": "^2.4.0"
   }
 }
