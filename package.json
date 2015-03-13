@@ -4,8 +4,11 @@
   "description": "PA Workshop task",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server dist --silent"
   },
   "author": "Mateusz Tuński",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.7.5"
+  }
 }
