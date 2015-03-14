@@ -13,6 +13,7 @@
     "browserify": "^9.0.3",
     "coffee-reactify": "^2.4.1",
     "http-server": "^0.7.5",
+    "jquery": "^2.1.3",
     "react": "^0.13.0",
     "watchify": "^2.4.0"
   },
