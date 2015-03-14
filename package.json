@@ -2,16 +2,23 @@
   "name": "PilotNews",
   "version": "0.0.0",
   "description": "PA Workshop task",
-  "main": "src/app.js",
+  "main": "src/app.coffee",
   "scripts": {
     "start": "http-server dist --silent",
-    "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .jsx"
+    "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .cjsx"
   },
   "author": "Mateusz Tuński",
   "license": "ISC",
   "devDependencies": {
     "browserify": "^9.0.3",
+    "coffee-reactify": "^2.4.1",
     "http-server": "^0.7.5",
+    "react": "^0.13.0",
     "watchify": "^2.4.0"
+  },
+  "browserify": {
+    "transform": [
+      "coffee-reactify"
+    ]
   }
 }
