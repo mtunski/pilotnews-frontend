@@ -1,4 +1,5 @@
-StoriesList = require './stories_list'
+StoriesList   = require './stories_list'
+StoriesNavbar = require './stories_navbar'
 
 StoriesContainer = React.createClass
   displayName: 'StoriesContainer'
@@ -13,7 +14,7 @@ StoriesContainer = React.createClass
 
   render: ->
     <div className='container'>
-      <h2>Stories</h2>
+      <StoriesNavbar />
       <StoriesList stories=@state.stories />
     </div>
 
