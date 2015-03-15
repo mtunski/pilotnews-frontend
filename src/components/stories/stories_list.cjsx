@@ -1,5 +1,7 @@
 Story = require './story'
 
+ListGroup = require('react-bootstrap').ListGroup
+
 StoriesList = React.createClass
   displayName: 'StoriesList'
 
@@ -8,8 +10,8 @@ StoriesList = React.createClass
       <Story key   = {story.id}
              title = {story.title}
              url   = {story.url}
-             score = {story.score}/>
+             score = {story.score} />
 
-    <ul>{stories}</ul>
+    <ListGroup>{stories}</ListGroup>
 
 module.exports = StoriesList

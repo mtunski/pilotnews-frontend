@@ -12,8 +12,8 @@ StoriesContainer = React.createClass
         @setState stories: stories
 
   render: ->
-    <div>
-      <h1>Stories</h1>
+    <div className='container'>
+      <h2>Stories</h2>
       <StoriesList stories=@state.stories />
     </div>
 
