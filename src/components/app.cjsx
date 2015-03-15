@@ -1,9 +1,12 @@
-React = require 'react'
+StoriesContainer = require './stories/stories_container'
 
 App = React.createClass
   displayName: 'App'
 
   render: ->
-    <h1>Hello, world.</h1>
+    <div>
+      <h1>PilotNews</h1>
+      <StoriesContainer source='https://fierce-gorge-1132.herokuapp.com/stories' />
+    </div>
 
 module.exports = App
