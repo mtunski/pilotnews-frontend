@@ -1,3 +1,4 @@
+React   = require 'react'
 Navbar  = require('react-bootstrap').Navbar
 Nav     = require('react-bootstrap').Nav
 NavItem = require('react-bootstrap').NavItem

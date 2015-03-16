@@ -1,5 +1,5 @@
-window.React             = require 'react'
-window.jQuery = window.$ = require 'jquery'
+React = require 'react'
+$     = require 'jquery'
 
 App = require './components/app'
 

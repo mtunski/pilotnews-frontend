@@ -1,3 +1,6 @@
+React = require 'react'
+$     = require 'jquery'
+
 StoriesList   = require './stories_list'
 StoriesNavbar = require './stories_navbar'
 

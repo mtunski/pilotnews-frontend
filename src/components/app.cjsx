@@ -1,3 +1,5 @@
+React = require 'react'
+
 StoriesContainer = require './stories/stories_container'
 
 PageHeader = require('react-bootstrap').PageHeader

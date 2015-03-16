@@ -1,3 +1,5 @@
+React = require 'react'
+
 ListGroupItem = require('react-bootstrap').ListGroupItem
 Badge         = require('react-bootstrap').Badge
 
