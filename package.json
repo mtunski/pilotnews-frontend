@@ -2,6 +2,9 @@
   "name": "PilotNews",
   "version": "1.0.0",
   "description": "PA Workshop task",
+  "engines": {
+    "node": "0.10.x"
+  },
   "main": "src/app.coffee",
   "scripts": {
     "start": "http-server dist --silent",
@@ -10,6 +13,10 @@
   },
   "author": "Mateusz Tuński",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mtunski/pilotnews-frontend.git"
+  },
   "dependencies": {
     "browserify": "^9.0.3",
     "http-server": "^0.7.5",
