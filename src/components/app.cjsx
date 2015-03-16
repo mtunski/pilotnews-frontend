@@ -1,8 +1,14 @@
 React = require 'react'
 
-StoriesContainer = require './stories/stories_container'
-
 PageHeader = require('react-bootstrap').PageHeader
+
+Router       = require 'react-router'
+Route        = Router.Route
+RouteHandler = Router.RouteHandler
+Redirect     = Router.Redirect
+
+PopularStories = require './stories/scopes/popular'
+RecentStories  = require './stories/scopes/recent'
 
 App = React.createClass
   displayName: 'App'
@@ -14,7 +20,20 @@ App = React.createClass
           PilotNews <small>Pure awesomeness!</small>
         </div>
       </PageHeader>
-      <StoriesContainer source='https://fierce-gorge-1132.herokuapp.com/stories' />
+      <RouteHandler/>
     </div>
+
+  statics:
+    run: ->
+      Router.run routes, (Handler) ->
+        React.render <Handler />, document.getElementById('content')
+
+routes = <Route handler={App}>
+           <Route name='stories'>
+             <Route name='popular' handler={PopularStories} />
+             <Route name='recent' handler={RecentStories} />
+           </Route>
+           <Redirect from='/' to='/stories/popular' />
+         </Route>
 
 module.exports = App

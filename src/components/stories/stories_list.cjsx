@@ -1,4 +1,5 @@
 React     = require 'react'
+
 ListGroup = require('react-bootstrap').ListGroup
 
 Story = require './story'
