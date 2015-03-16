@@ -1,6 +1,6 @@
 {
   "name": "PilotNews",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "PA Workshop task",
   "main": "src/app.coffee",
   "scripts": {
