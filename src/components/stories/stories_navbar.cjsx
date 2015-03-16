@@ -1,16 +1,18 @@
-React   = require 'react'
-Navbar  = require('react-bootstrap').Navbar
-Nav     = require('react-bootstrap').Nav
-NavItem = require('react-bootstrap').NavItem
+React = require 'react'
+
+Navbar = require('react-bootstrap').Navbar
+Nav    = require('react-bootstrap').Nav
+
+NavItemLink = require('react-router-bootstrap').NavItemLink
 
 StoriesNavbar = React.createClass
   displayName: 'StoriesNavbar'
 
   render: ->
     <Navbar brand="Stories">
-      <Nav activeKey={1}>
-        <NavItem eventKey={1} href='#'>Popular</NavItem>
-        <NavItem eventKey={2} href='#'>Recent</NavItem>
+      <Nav>
+        <NavItemLink to='/stories/popular'>Popular</NavItemLink>
+        <NavItemLink to='/stories/recent'>Recent</NavItemLink>
       </Nav>
     </Navbar>
 
