@@ -5,7 +5,8 @@
   "main": "src/app.coffee",
   "scripts": {
     "start": "http-server dist --silent",
-    "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .cjsx"
+    "watch": "npm start & watchify . -o dist/app.js --verbose --debug --extension .cjsx",
+    "postinstall": "browserify . -o dist/app.js --extension .cjsx"
   },
   "author": "Mateusz Tuński",
   "license": "ISC",
