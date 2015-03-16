@@ -7,10 +7,7 @@ StoriesList = React.createClass
 
   render: ->
     stories = @props.stories.map (story) ->
-      <Story key   = {story.id}
-             title = {story.title}
-             url   = {story.url}
-             score = {story.score} />
+      <Story key = {story.id}, {...story} />
 
     <ListGroup>{stories}</ListGroup>
 
