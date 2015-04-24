@@ -11,7 +11,7 @@ StoriesContainer = React.createClass
     stories: []
 
   componentDidMount: ->
-    $.get @props.source, (stories) =>
+    $.get "https://fierce-gorge-1132.herokuapp.com/#{@props.source}", (stories) =>
       if @isMounted()
         @setState stories: stories
 
